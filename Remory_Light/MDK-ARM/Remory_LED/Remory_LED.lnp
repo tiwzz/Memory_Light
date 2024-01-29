@@ -1,0 +1,24 @@
+--cpu Cortex-M3
+"remory_led\startup_stm32f103xb.o"
+"remory_led\main.o"
+"remory_led\gpio.o"
+"remory_led\stm32f1xx_it.o"
+"remory_led\stm32f1xx_hal_msp.o"
+"remory_led\stm32f1xx_hal_gpio_ex.o"
+"remory_led\stm32f1xx_hal_tim.o"
+"remory_led\stm32f1xx_hal_tim_ex.o"
+"remory_led\stm32f1xx_hal.o"
+"remory_led\stm32f1xx_hal_rcc.o"
+"remory_led\stm32f1xx_hal_rcc_ex.o"
+"remory_led\stm32f1xx_hal_gpio.o"
+"remory_led\stm32f1xx_hal_dma.o"
+"remory_led\stm32f1xx_hal_cortex.o"
+"remory_led\stm32f1xx_hal_pwr.o"
+"remory_led\stm32f1xx_hal_flash.o"
+"remory_led\stm32f1xx_hal_flash_ex.o"
+"remory_led\stm32f1xx_hal_exti.o"
+"remory_led\system_stm32f1xx.o"
+--strict --scatter "Remory_LED\Remory_LED.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Remory_LED.map" -o Remory_LED\Remory_LED.axf
